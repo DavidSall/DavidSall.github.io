@@ -1,8 +1,9 @@
-<p><html>
+<html>
 
 <head>
          
-        <link rel="icon" type="image/png" href="https://people.kth.se/~dsall/favicon.png?">
+        <link rel="icon" type="image/png" href="https://people.kth.se/~dsall/favicon.png?"/>
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap">
     
          
       
@@ -10,13 +11,14 @@
 <style>
 
 body {
-        
-      
-    margin: 0;
-}
+         background-color: #FFFFFF;
+
+           margin: 0;
+      }
 
 
-
+/* scroll kit start */
+         
 div::-webkit-scrollbar-track {
   
   border-radius: 0px;
@@ -41,48 +43,53 @@ height: 6px;
   background-color: #858585;
 }
 
-
-.float-container {
-    border: 0px;
-    padding: 0px;
-}
-
-.float-child-1 {
-    width: 60%;
-    float: left;
-    padding: 2px;
-    border: 0px;
-}  
-
-.float-child-2 {
-    width: 40%;
-    float: right;
-    padding: 2px;
-    border: 0px;
-}           
+/* scroll kit end */
 
 
-.float-child-left {
-    width: 50%;
-    float: left;
-    padding: 2px;
-    border: 0px;
-}           
+      .container {
+            position: relative;
+            width: 100%;
+        }
 
-         .float-child-right {
-    width: 50%;
-    float: right;
-    padding: 2px;
-    border: 0px;
-} 
+        /* overlay image */
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-         
+        /* overlay text */
+          .overlay-text {
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(20px, -40px);
+            text-align: left;
+            z-index: 2;
+        }
 
-p {
- 
-  font-family: gadugi;
-  
-}
+
+
+
+          /* image side by side */
+        .side-by-side {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Adjust styles for the text and image within the side-by-side section */
+        .side-by-side img {
+            max-width: 48%; /* Adjust the width as needed */
+        }
+
+        .side-by-side p {
+            max-width: 48%; /* Adjust the width as needed */
+                 margin-right: 10px;
+        }
+
+
+
 
 
 
@@ -91,40 +98,16 @@ p {
 
 
 </style>
-         <meta name="keywords" content="Arkitekturportfolio, Bo2049, studenttävling, resultat, Byggnadsdesign, Arkitekturprojekt, Arkitekturutbildning, Arkitekturstudenter, Arkitekturkarriär, Byggnadsplanering, Arkitektonisk design, Hållbar arkitektur, Byggnadsteknik, Projektledning, Ritningar och skisser, Konceptutveckling, Byggnadsmaterial, Arkitekturteknik, Landskapsarkitektur, Visualisering och rendering, Byggnadsdokumentation, Byggnadsfysik, BIM (Byggnadsinformationsmodellering), Miljövänligt byggande, Renoveringsprojekt, Byggnadsstandarder, Arkitekturhistoria, Arkitekturteori, Byggnadsbesiktning, Interiördesign, Bygglov, Byggprojekt, Konstruktionsdetaljer, Urbant design, Byggteknik, Byggnadsritningar, Arkitektonisk modellering, Arkitekturpresentation, Byggnadsautomatisering, Estetik och form, Arkitektonisk skala, Konstruktionsmaterial, Hållbar stadsutveckling, Byggnadssäkerhet, Byggmaterialleverantörer, Energihantering, Byggnadsprocessen, Digitala verktyg för arkitektur, Byggnadsföreskrifter, Arkitektonisk erfarenhet, Interiörarkitektur, Stadsplanering, Arkitektonisk kritik, Byggnadskommunikation, Projektutvärdering, Arkitekturpraktik, Klimatpåverkan i byggbranschen, Arkitektoniskt uttryck, Materialåtervinning, Konstruktionsteknik, Byggprojektledning, Byggkostnader, Hållbarhetscertifiering, Visualiseringsteknik, Arkitektonisk forskning, Byggnadsakustik, Arkitektoniskt formspråk, Konstruktionsberäkningar, Byggteknisk dokumentation, Miljövänliga material, Bostadsdesign, Byggnadsutformning, Byggprojektering, Historiska byggnader, Byggnadsentreprenad,Arkitekturstilar, Modern arkitektur, Brutalistisk arkitektur, Funktionalistisk arkitektur, Postmodern arkitektur, Stadsdesign, Placemaking, Gatudesign, Torgdesign, Passivt hus, Energiförbrukning, Solenergi, Gröna tak, Byggnadstyper, Skyskrapor, Bostadshus, Offentliga byggnader, Kommersiella byggnader, Arkitektoniskt ljus, Dagsljusdesign, Konstgjort ljus, Ljusstyrning, Historiska restaureringar, Kulturarv, Bevarande, Hållbarhetscertifieringssystem, LEED-certifiering, BREEAM-certifiering, Miljöklassning, Inredningsarkitektur, Möbeldesign, Materialval, Byggnadsakustik, Ljudisolering, Ljudabsorption, Bioklimatisk design, Passiv solvärme, Naturlig ventilation, Hållbarhetsstrategier, Återvinning, Regnvattenhantering, Digital modellering, BIM-programvara, Virtuell verklighet, 3D-visualisering, Innovativa byggmaterial, Biobaserade material, Återvunna material, Stadsomvandling, Brownfield-utveckling, Stadsförnyelse, Ergonomisk design, Tillgänglighet, Universell design, Ljudlandskap, Stadsbuller, Ljudplanering, Hållbar transport, Cykelinfrastruktur, Kollektivtrafik, Adaptiv återanvändning, Byggnadskonvertering, Transformering, Brandsäkerhet, Brandskydd, Brandklassificering, Arkitekturpsykologi, Rumsuppfattning, Färgpsykologi, Simulering av energiförbrukning, Energianalys, Energioptimering, Ekologiskt fotavtryck, Klimatförändringar, Resurseffektivitet, Byggprocessens effektivitet, Projekthantering, Tidsplanering, Fenestration (fönsterdesign), U-värde, Solavskärmning, Hållbar vattenhantering, Dagvattenhantering, Vattenåtervinning, Biomimetisk design, Naturinspirerad arkitektur, Ekosystemtjänster, Ljudvibrationer, Ljudreduktion, Akustisk komfort, Arkitektonisk dokumentation, Ritningsstandarder, Teknisk specifikation, Kulturbyggnader, Museumsdesign, Teaterarkitektur, Innovativa byggtekniker, Prefabricering, Modulär konstruktion, Stadsintegration, Platskontext, Stadsmiljö, Energistyrningssystem, Automation, Smarta byggnader, ojsdofjdfdofaofafdifdiofjadiofjadifsdogjdiojiofgjdjgsdvnaojvncsojnvovnsvnvjoascnaocvn ">
-         <meta name="description" content="Bo2049 var en studenttävling som hölls hösten 2022, mitt förslag handlade om en framtid där hemmen behöver vara ännu mer privata i takt med att vår integritet och liv blir allt mer publika">
-          <title>David Säll - Arkitekturportfolio - KTH arkitekturstudent</title>
+         <meta name="keywords" content="content="Baltic Sea, art installation, spatial experience, pollution, environmental art, sea pollution, Baltic Sea installation, spatial dynamics, art exhibit, ecological issues, marine pollution, environmental installation, multimedia art, aquatic environment, Baltic Sea exploration">
+         <meta name="description" content="Experience an art installation examining the Baltic Sea's spatial dynamics and the critical exploration of its polluted state.">
+          <meta name="author" content="David Säll">
+          <title>Can't we all just get along? Baltic island Onsen- KTH arkitekturstudent</title>
          
          
 </head>
 
 
-         <body>
-
-
-
-
-<img src="https://people.kth.se/~dsall/Images/bo2049.jpg" width="100%" alt="header">
-
-
-<div class="float-container">
-
-  <div class="float-child-1">
-    <p>Bo2049 var en studenttävling av villa nrodic 2022, mitt tävlingsförslag hade titeln <b>noctiluca scintillans</b>, namngiven efter algien vilken dens centerpeice ladda ned hela tävlingsförslaget <a href="https://people.kth.se/~dsall/Images/Portfolio/Bo2049/Noctiluca_scintillans.pdf"> här! </a> </p>
-  </div>
-  
-  <div class="float-child-2">
-    <img src="https://people.kth.se/~dsall/Images/Portfolio/Bo2049/sektion.jpg" width="100%" ">
-  </div>
-
-      
-</div>
-                  
-                
-
-                  
-                  
-                  
+<body>
 
 
 
@@ -133,7 +116,44 @@ p {
 
 
 
-                  
-         </body>
+
+<div class="container">
+      <img width="100%" src="https://people.kth.se/~dsall/Images/Portfolio/Bo2049/Kollage-visualiseringliggadne.png" alt="Kollage-visualiseringliggadne.png">
+        <div class="overlay-text">
+            <h1 style="font-family: 'EB Garamond', serif; font-style: italic; font-weight: 100; color: black; font-size: 80px;">Can't we all just get along?</h1>
+        </div>
+    </div>
 
 
+
+
+         <div class="side-by-side">
+        <img src="https://people.kth.se/~dsall/Images/Portfolio/alunskar/plan.jpg" alt="Plan.jpg">
+        <p style="font-family: 'EB Garamond', serif; font-style: italic; font-weight: 100; color: black;">C.
+
+</p>
+    </div>
+
+<img width="100%" src="https://people.kth.se/~dsall/Images/Portfolio/Bo2049/sektion.jpg" alt="sektion.jpg">
+
+<a src="https://people.kth.se/~dsall/Images/Portfolio/alunskar/Skarmar.pdf">Download screens (large PDF)</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+</body>
